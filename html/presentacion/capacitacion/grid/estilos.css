@@ -1,0 +1,28 @@
+body{
+    display:grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-areas: 
+        'navbar  navbar'
+        'content  sidebar'
+        'article  article';
+}
+
+nav{
+    background-color: bisque;
+    grid-area:navbar;
+}
+
+main{
+    background-color: rgb(218, 19, 201);
+    grid-area:content;
+}
+
+aside{
+    background-color: rgb(18, 196, 33);
+    grid-area: sidebar;
+}
+
+section{
+    background-color: rgb(196, 236, 255);
+    grid-area:article;
+}

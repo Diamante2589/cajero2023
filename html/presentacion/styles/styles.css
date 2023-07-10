@@ -1,0 +1,46 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:Arial, Helvetica, sans-serif;
+    color:black;
+}
+
+h1{
+    margin-top: 5px;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+li{
+    margin:20px;
+    list-style: none;
+    font-size: 18px;
+    padding: 10px;
+    border-bottom: 1px solid lightgray;
+}
+
+li:hover{
+    background-color: lightyellow;
+}
+
+li:focus{
+    background-color: lightcyan;
+}
+
+[contenteditable]::before{
+    content:"❌";
+    
+}
+/* Este es un comentario */
+
+[data-completed]{
+    text-decoration: line-through;
+    color:grey;
+}
+
+[data-completed]::before{
+    content:"✅";
+       
+}

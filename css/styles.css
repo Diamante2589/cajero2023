@@ -1,0 +1,23 @@
+body{
+    background-color: gray;
+}
+
+
+.parrafo{
+    background-color: red;
+    width:100px;
+    height:100px;
+}
+
+.sobreMI{
+    color:rgb(24, 153, 74);
+}
+
+.tarjeta-boton:active{
+    background-color: blue;
+}
+
+
+h1::after{
+
+}
