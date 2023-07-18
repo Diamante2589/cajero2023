@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cajero ATM</title>
+</head>
+<body>
+    <!-- Mostrar si no se ha ingresado un número de cuenta -->
+    <section id="noAccountErrorPanel" style="background-color: #ff9999; border: 2px solid #ff0000;">
+        <h1 style="text-align: center; color: darkred;">No ha ingresado su número de cuenta</h1>
+    </section>
+
+    <!-- Ver el saldo -->
+    <section>
+        <div>
+            <p>
+                El saldo actual de su cuenta es:
+                <span id="spSaldoCuenta"></span>
+            </p>
+        </div>
+    </section>
+
+    <!-- Realizar un depósito -->
+    <section>
+        <label for="inValorDepositar">Valor a depositar: </label>
+        <input id="inValorDepositar" placeholder="Valor a depositar" type="number" />
+        <button onclick="depositar()">Depositar</button>
+    </section>
+
+    <br />
+
+    <!-- Realizar un retiro -->
+    <section>
+        <label for="inValorRetirar">Valor a retirar: </label>
+        <input id="inValorRetirar" placeholder="Valor a retirar" type="number" />
+        <button onclick="retirar()">Retirar</button>
+    </section>
+
+    <br />
+
+    <button onclick="limpiarCajero()">Limpiar</button>
+
+    <br />
+
+    <!-- movimientos -->
+    <section id="scMovimientos">
+
+    </section>
+
+
+<hr />
+
+
+
+  <!--Crear cuenta-->
+    <section>
+        <label for="inNoCuenta">Crear Cuenta</label>
+        <input id="inNoCuenta" placeholder="Cree su numero de cuenta" type="number"/>
+        <button onclick="onClickAgregarCuenta()">Agregar</button>
+        <button onclick="onClickIngresarCuenta()">Ingresar</button>
+    </section>
+<!--ingresar cuenta-->
+   
+<!--Salir cuenta--> 
+    <section style="display: flex; justify-content: end;">
+         <button onclick="salirCuenta()">Salir</button>
+    </section>
+
+    <script src="./main.js"></script>
+</body>
+</html>
