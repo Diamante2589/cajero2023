@@ -1,0 +1,18 @@
+[
+    {
+        "id": "1",
+        "title": "Aliens",
+        "director": "james cameron",
+        "year" : "1963",
+        "rating": "8.5"
+    },
+    {
+        "id": "2",
+        "title": "Bad Boys",
+        "director": "cris Bay",
+        "year" : "1986", 
+        "rating" : "8"
+    }
+
+
+]
